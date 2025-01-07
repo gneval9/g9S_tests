@@ -10,7 +10,7 @@ function send() {
 
     if (name == "Arturo" && lastname == "Galiana") {
         alert("Hola " + name + " " + lastname + ", seras redirigido a la pagina en breve");
-        window.location.href = "final.html";
+        window.location.href = "redirect_test_end.html";
         }
 
     else {
