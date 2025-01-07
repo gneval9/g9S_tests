@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>g9S_tests</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+        }
+        
+        .dark-mode {
+            --bg-color: #333333;
+            --text-color: #ffffff;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1 align="center">gneval9 Software</h1>
@@ -15,7 +44,13 @@
     <br>
     <h2 align="center" style="text-decoration: underline;">Tests below:</h2>
     <p align="center">1: <a href="login_with_name.html">Login with name and lastname</a></p>
+    <p>2: <button class="theme-toggle" onclick="toggleTheme()">Change theme</button>
 
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 
 </body>
 </html>
